@@ -1,0 +1,43 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+html
+    head
+        title=title
+    body
+        h1= message
+        h2= message
+        h3!= message
+
+        -var naver = 'http://www.naver.com/';           //링크
+        a(href= naver style={color: 'red', background: 'gold'} role= 'button' class="btn btn-default") go to Naver
+        br
+
+        - var btnType = 'info'
+        - var btnSize = 'lg'
+        button(type='button' value='안뇽') 앙뇽
+        br
+        button(type='button' style={height: '100px', width: '100px'}) 앙뇽
+        br
+        = '\n'
+        = '\n'
+        = '\n'
+        input(type='checkbox' checked=false)
+        = '\n'
+        <button type="submit" class="btn btn-default" href= naver>Naver</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>
+
+        br
+        br
+
+        <a class="btn btn-info" href="/home" role="button">Go to home</a>
