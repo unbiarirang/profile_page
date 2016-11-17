@@ -22,8 +22,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+require('./routes/test').init(app);
+
 app.use('/home', home);
 app.use('/', routes);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -58,5 +61,8 @@ app.use(function(err, req, res, next) {
   });
 });
 
+app.listen(3000, function() {
+    console.log('server on!');
+});
 
 module.exports = app;

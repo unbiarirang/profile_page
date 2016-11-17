@@ -17,8 +17,6 @@ router.get('/2016', function(req, res) {
     res.render('home_2016', {});
 });
 
-
-
 var my = ['최은비', 'eunbi choi', '崔殷庇'];
 
 module.exports = router;
